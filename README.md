@@ -1,3 +1,24 @@
+
+
+
+Maven
+
+   <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+
+        <dependency>
+            <groupId>com.github.xuejike</groupId>
+            <artifactId>bd_framework_access_control</artifactId>
+            <version>v0.1</version>
+        </dependency>
+
+
+
+
+
 ```
 <mvc:interceptors>
     <!-- 使用bean定义一个Interceptor，直接定义在mvc:interceptors根下面的Interceptor将拦截所有的请求 -->
