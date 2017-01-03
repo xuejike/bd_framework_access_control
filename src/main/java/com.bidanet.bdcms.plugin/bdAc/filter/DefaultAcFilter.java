@@ -1,5 +1,6 @@
 package com.bidanet.bdcms.plugin.bdAc.filter;
 
+
 import com.bidanet.bdcms.plugin.bdAc.core.AcResource;
 import com.bidanet.bdcms.plugin.bdAc.core.AcResourceManage;
 import com.bidanet.bdcms.plugin.bdAc.core.AcUserManage;
@@ -40,6 +41,7 @@ public class DefaultAcFilter implements AcFilter {
             //移除contextPath
 
             String url = requestURI.replaceFirst(contextPath,"");
+            url=url.replaceAll("/+","/");
             AcResource acResource = resourceMap.get(url);
             //如果url不存在，则采用默认放过
             if (acResource==null){
